@@ -15,9 +15,10 @@ form.addEventListener("submit", (e)=>{
   arr =  input.value.split("-")
 //   console.log(arr);
 
+
   if (
     /*conditions of common*/
-     arr.length == 3 && arr[0].length == 3 && arr[1].length == 2 && arr[2].length == 4 
+    !input.value.split("").includes("+") && !input.value.split("").includes(".") && arr.length == 3 && arr[0].length == 3 && arr[1].length == 2 && arr[2].length == 4 
      /*conditions of first part*/
      && arr[0] != "000" && arr[0] != "666" && +arr[0] < 900
     /*conditions of second part*/
@@ -30,6 +31,7 @@ form.addEventListener("submit", (e)=>{
 
   else {
         invalid()
+        console.log(+arr[0]);
         
     }
 
