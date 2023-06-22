@@ -41,12 +41,12 @@ form.addEventListener("submit", (e)=>{
 
  const valid = () => {
     
-    article.innerText = `Entered SSN (${input.value} is valid).`;
+    article.innerText = `Entered SSN (${input.value}) is valid.`;
     article.className = "text-success";
     
 } 
     
- const invalid = () => {article.innerText = `Entered SSN (${input.value} is invalid).
+ const invalid = () => {article.innerText = `Entered SSN (${input.value}) is invalid.
  Please read the introduction carefully.`;
  article.className = "text-danger";}
     
